@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story Full</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fullstory.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__bar">
+        <span class="nav__row">
+          <svg
+            class="nav__icon icon__back"
+            width="22"
+            height="40"
+            viewBox="0 0 22 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M21.5 40L0.5 20L21.5 1"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="21"
+                  height="40"
+                  fill="white"
+                  transform="translate(0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            class="nav__icon icon__comments"
+            width="44"
+            height="46"
+            viewBox="0 0 44 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 23H23.4675"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <path
+              d="M12 14H33.0238"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <path
+              d="M18 35.8567H1V1H43V35.8567H33C32.4477 35.8567 32 36.3044 32 36.8567V43.089C32 43.8869 31.1115 44.3634 30.4468 43.922L18.5532 36.0237C18.3893 35.9148 18.1968 35.8567 18 35.8567Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            class="nav__icon icon__text"
+            width="52"
+            height="36"
+            viewBox="0 0 52 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M43.3234 12.3974C45.8677 12.3974 47.9471 13.0223 49.5263 14.2943C51.1062 15.5669 51.9109 17.541 51.9753 20.1396L51.9795 20.4821L52.0003 33.3945C52.0019 33.9467 51.5554 34.3958 51.0032 34.3974C50.4903 34.3989 50.0665 34.014 50.0073 33.5169L50.0001 33.3582L49.9945 31.1707C49.905 31.2994 49.8123 31.4262 49.7163 31.5512C48.8298 32.7054 47.6518 33.6354 46.1949 34.3398C44.7252 35.0504 42.8963 35.3974 40.7108 35.3974C39.7978 35.3974 38.8966 35.2559 38.0109 34.974C37.1169 34.6894 36.303 34.2732 35.5735 33.7265C34.816 33.1589 34.1991 32.4311 33.7267 31.5526C33.2412 30.6498 33.0003 29.6317 33.0003 28.5132C33.0003 26.9279 33.4322 25.5677 34.3036 24.4703C35.1307 23.4285 36.2287 22.6018 37.5837 21.991C38.8844 21.4046 40.3357 20.9919 41.9357 20.7507C43.2751 20.5487 44.6534 20.4334 46.0705 20.4046L46.7822 20.3974H49.9783L49.9755 20.1712C49.9228 18.1297 49.3435 16.7151 48.2717 15.8519C47.077 14.8895 45.4394 14.3974 43.3234 14.3974C42.1899 14.3974 40.9951 14.6112 39.7369 15.0432C38.516 15.4623 37.5086 16.0698 36.7033 16.866C36.3106 17.2543 35.6774 17.2507 35.2891 16.858C34.9008 16.4652 34.9044 15.8321 35.2972 15.4438C36.3227 14.4299 37.5899 13.6657 39.0875 13.1516C40.5477 12.6502 41.9604 12.3974 43.3234 12.3974ZM14.8057 0L16.6548 0.0336267L29.9318 34.0336C30.1326 34.5481 29.8785 35.128 29.364 35.3289C28.8863 35.5154 28.3522 35.3096 28.1174 34.8673L28.0688 34.7611L24.412 25.397H5.986L1.91791 34.7947C1.71412 35.2654 1.19191 35.4998 0.712572 35.3552L0.60288 35.315C0.132273 35.1112 -0.102192 34.589 0.0424295 34.1097L0.082598 34L14.8057 0ZM49.9793 22.3974H46.7822C45.2124 22.3974 43.6964 22.5078 42.2339 22.7283C40.8089 22.9432 39.5334 23.3059 38.4056 23.8143C37.332 24.2982 36.4913 24.9312 35.8699 25.7139C35.2926 26.441 35.0003 27.3615 35.0003 28.5132C35.0003 29.3104 35.1641 30.0028 35.4881 30.6053C35.8252 31.2321 36.2522 31.7359 36.7729 32.1261C37.3216 32.5373 37.9349 32.8509 38.6175 33.0682C39.3081 33.288 40.0047 33.3974 40.7108 33.3974C42.6155 33.3974 44.1525 33.1058 45.3244 32.5392C46.5091 31.9664 47.4401 31.2314 48.1301 30.333C48.7601 29.5127 49.2133 28.5952 49.4918 27.5735L49.9743 25.412L49.9793 25.4184V22.3974ZM15.6753 3.02337L6.852 23.397H23.631L15.6753 3.02337Z"
+              fill="white"
+            />
+          </svg>
+
+          <svg
+            class="nav__icon icon__bookmark"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.536 30.1142L1 40.3473V1H41V40.3473L21.464 30.1142C21.1734 29.9619 20.8266 29.9619 20.536 30.1142Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13 11H29"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+          </svg>
+          <svg
+            class="nav__icon icon__share"
+            width="39"
+            height="39"
+            viewBox="0 0 39 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.5"
+              d="M39 0V31C39 31.5523 38.5523 32 38 32C37.4872 32 37.0645 31.614 37.0067 31.1166L37 31V3.256L1.41421 38.8423L0 37.4281L35.428 2H8C7.48716 2 7.06449 1.61396 7.00673 1.11662L7 1C7 0.487164 7.38604 0.0644928 7.88338 0.00672773L8 0L39 0Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        <div class="first__third"></div>
+        <div class="second__third"></div>
+        <div class="third__third"></div>
+      </nav>
+    </header>
+    <main>
+      <div class="story__header">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="img/story_background_tablet.png"
+          />
+          <img
+            class="story__image"
+            src="img/story_background.png"
+            alt="Arctic sea ice extent hits record"
+          />
+        </picture>
+        <div class="story__title">
+          <h1 class="title__story">
+            Arctic sea ice extent hits record low for winter maximum
+          </h1>
+          <div class="title__icons">
+            <span class="header__icon">
+              <svg class="header__comment" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M5.59998 8.70007H10.187" stroke="white" stroke-linecap="square"/>
+                <path d="M5.59998 4.70007H14.0095" stroke="white" stroke-linecap="square"/>
+                <path d="M7.99999 14.4428H1.29999V0.700073H17.9V14.4428H14C13.7238 14.4428 13.5 14.6666 13.5 14.9428V17.4357C13.5 17.675 13.2334 17.818 13.034 17.6856L8.27659 14.5262C8.19461 14.4718 8.0984 14.4428 7.99999 14.4428Z" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="18" height="19" fill="white" transform="translate(0.799988 0.200073)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+            </span>
+            <span class="header__icon header-second">
+              <svg class="header__bookmark" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M8.36801 12.157L0.700012 16.1736V0.699951H16.5V16.1736L8.83202 12.157C8.68671 12.0809 8.51331 12.0809 8.36801 12.157Z" stroke="white" stroke-linecap="square" stroke-linejoin="round"/>
+                <path d="M5 4.69995H11.4" stroke="white" stroke-linecap="square"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="17" height="17" fill="white" transform="translate(0.200012 0.199951)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </span>
+            <span class="header__icon">
+              <svg class="header__share" width="14" height="14" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M39 0V31C39 31.5523 38.5523 32 38 32C37.4872 32 37.0645 31.614 37.0067 31.1166L37 31V3.256L1.41421 38.8423L0 37.4281L35.428 2H8C7.48716 2 7.06449 1.61396 7.00673 1.11662L7 1C7 0.487164 7.38604 0.0644928 7.88338 0.00672773L8 0L39 0Z" fill="white"/>
+                </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="story__info">
+        <span class="story__source story__item">
+          <span class="source__icon">
+            <svg
+              class="source__svg"
+              width="22"
+              height="32"
+              viewBox="0 0 22 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 26C6.33333 20.4772 6.33333 11.5228 1 6"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M15 31C23 22.7157 23 9.28427 15 1"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="source__company">CNN</span>
+        </span>
+        <span class="story__date story__item">
+          <span class="date__icon">
+            <svg
+              class="clock__svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 29C7.26791 29 1 22.7341 1 15C1 7.27005 7.26809 1 15 1C22.7319 1 29 7.27005 29 15C29 22.7341 22.7321 29 15 29Z"
+                stroke="black"
+                stroke-width="2"
+              />
+              <path d="M22 17H14V7" stroke="black" stroke-width="2" />
+            </svg>
+          </span>
+          <span class="date__time">Apr 3, 2015</span>
+        </span>
+        <span class="story__category story__item">
+          <span class="category__topic">ENVIRONMENT</span>
+        </span>
+      </div>
+      <p class="story__about">
+        According to the National Oceanic and Atmospheric Administration, Ted
+        Scambos, NSIDC lead scientist, puts the potentially record low maximum
+        sea ice extent this year down to low ice extent in the Pacific and a
+        late drop in ice extent in the Barents Sea.
+      </p>
+      <div class="story__details">
+        <div class="details__images">
+          <div class="image__human">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/story_human_tablet.png"
+              />
+              <img
+                src="img/story_legs_2.png"
+                class="details__human"
+                alt="Human"
+              />
+            </picture>
+          </div>
+
+          <div class="image__mountain">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/story_mountain_tablet.png"
+              />
+              <img
+                src="img/story_mountains_2.png"
+                class="details__mountain"
+                alt="Mountains"
+              />
+            </picture>
+          </div>
+          <blockquote class="story__quote">
+            <p class="quote__content">
+              “Over the span of the satellite record, Arctic sea ice has been
+              declining significantly, while sea ice in the Antarctic has
+              increased very slightly”
+            </p>
+            <p class="quote__author">- NOAA</p>
+          </blockquote>
+        </div>
+        <div class="story__text">
+          <div class="details__video video-desktop">
+            <img class="video__image" src="img/story_woods.png" alt="Video" />
+            <button class="video__play">
+              <div class="play__triangle"></div>
+            </button>
+          </div>
+          <div class="text__content">
+            <div class="content__maxwidth">
+              <h2 class="part__title">
+                So what does this new record for the lowest level of winter ice
+                actually mean?
+              </h2>
+              <p class="part__content content-one">
+                The Arctic Ocean freezes every winter and much of the sea-ice
+                then thaws every summer, and that process will continue whatever
+                happens with climate change. Even if the Arctic continues to be
+                one of the fastest-warming regions of the world, it will always
+                be plunged into bitterly cold polar dark every winter. And
+                year-by-year, for all kinds of natural reasons, there's huge
+                variety of the state of the ice.
+              </p>
+              <div class="details__video video-tablet">
+                <img
+                  class="video__image"
+                  src="img/story_woods.png"
+                  alt="Video"
+                />
+                <button class="video__play video-two">
+                  <div class="play__triangle"></div>
+                </button>
+              </div>
+              <p class="part__content content-two">
+                For a start, it does not automatically follow that a record
+                amount of ice will melt this summer. More important for
+                determining the size of the annual thaw is the state of the
+                weather as the midnight sun approaches and temperatures rise.
+                But over the more than 30 years of satellite records, scientists
+                have observed a clear pattern of decline, decade-by-decade.
+              </p>
+              <p class="part__content content-three">
+                So at some point this century the summers are on course to be
+                clear of ice, opening up new shipping lanes, making it easier to
+                access the region's oil and gas and possibly also altering the
+                path of the jet stream that drives our weather. So the matter of
+                when all this might happen is the subject of intense research.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story__gallery">
+        <div class="side-image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/gallery_first_tablet.png"
+            />
+            <img src="img/gallery_first.png" alt="" class="gallery__image" />
+          </picture>
+        </div>
+        <div class="main-image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/gallery_main_tablet.png"
+            />
+            <img src="img/gallery_main.png" alt="" class="gallery__image" />
+          </picture>
+        </div>
+        <div class="side-image">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="img/gallery_last_tablet.png"
+            />
+            <img src="img/gallery_last.png" alt="" class="gallery__image" />
+          </picture>
+        </div>
+        <!-- <div class="gallery__grid">
+        </div> -->
+      </div>
+      <div class="story__contribute">
+        <h4 class="contribute__title">Melting Ice in Arctic Ocean</h4>
+        <p class="contribute__author">James Flinton</p>
+        <div class="steps">
+          <div class="step"></div>
+          <div class="step step-active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+      </div>
+      <div class="story__comments">
+        <div class="comments__nav">
+          <h1 class="comments__title">23 COMMENTS</h1>
+          <div class="comments__categories">
+            <button class="category__button category-best">Best</button>
+            <button class="category__button">Newest</button>
+            <button class="category__button">Oldest</button>
+          </div>
+        </div>
+        <div class="comments__written">
+          <ul class="comments__list">
+            <li class="written__comment">
+              <img src="img/avatar_one.png" class="comment__avatar"></img>
+              <div class="comment__content">
+                <span class="comment__info">
+                  <span class="comment__item comment__author">Mike Taylor</span>
+                  <span class="comment__item comment__details">
+                  <span class="comment__item comment__time">
+                    <span class="time__icon">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M7.5 14.75C3.63395 14.75 0.5 11.617 0.5 7.75C0.5 3.88502 3.63405 0.75 7.5 0.75C11.366 0.75 14.5 3.88502 14.5 7.75C14.5 11.617 11.366 14.75 7.5 14.75Z" stroke="black"/>
+                        <path d="M11 8.75H7V3.75" stroke="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="15" height="15" fill="white" transform="translate(0 0.25)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </span>
+                    <span class="time__date">Apr 3, 1:22pm</span>
+                  </span>
+                  <span class="comment__item comment__likes">
+                    <span class="like__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M7.54712 3.53449L8.00053 4.50358L8.45307 3.53408C9.09744 2.15364 10.4653 1.48389 11.4615 1.48389C12.4158 1.48389 13.2986 1.79506 13.9375 2.38256C14.5694 2.9635 15 3.84834 15 5.07663C15 6.1369 14.5831 7.26028 13.9105 8.3736C13.2404 9.48274 12.3385 10.5457 11.4216 11.4752C10.5064 12.4031 9.5872 13.1871 8.89203 13.739C8.54474 14.0147 8.25486 14.2314 8.05128 14.378C8.02714 14.3953 8.00431 14.4117 7.98281 14.4269C7.96486 14.4157 7.94601 14.4039 7.92628 14.3914C7.7244 14.2636 7.43627 14.0732 7.09079 13.8269C6.39911 13.3337 5.48385 12.6208 4.57247 11.7422C2.72609 9.96231 1 7.60286 1 5.07663C1 2.83683 2.69259 1.52479 4.53506 1.48406C5.59592 1.52274 6.91819 2.19026 7.54712 3.53449Z" stroke="black" stroke-linecap="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      </span>
+                    <span class="like__count">12</span>
+                  </span>
+                </span>
+                </span>
+                <span class="comment__text"
+                  >Such a massive change in such a short time is extremely
+                  unusual.</span
+                >
+              </div>
+            </li>
+            <li class="written__comment">
+              <img src="img/avatar_two.png" class="comment__avatar"></img>
+              <div class="comment__content">
+                <span class="comment__info">
+                  <span class="comment__item comment__author">Sophia Anderson</span>
+                  <span class="comment__item comment__details">
+                  <span class="comment__item comment__time">
+                    <span class="time__icon">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M7.5 14.75C3.63395 14.75 0.5 11.617 0.5 7.75C0.5 3.88502 3.63405 0.75 7.5 0.75C11.366 0.75 14.5 3.88502 14.5 7.75C14.5 11.617 11.366 14.75 7.5 14.75Z" stroke="black"/>
+                        <path d="M11 8.75H7V3.75" stroke="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="15" height="15" fill="white" transform="translate(0 0.25)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </span>
+                    <span class="time__date">Apr 3, 5:04pm</span>
+                  </span>
+                  <span class="comment__item comment__likes">
+                    <span class="like__icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M7.54712 3.53449L8.00053 4.50358L8.45307 3.53408C9.09744 2.15364 10.4653 1.48389 11.4615 1.48389C12.4158 1.48389 13.2986 1.79506 13.9375 2.38256C14.5694 2.9635 15 3.84834 15 5.07663C15 6.1369 14.5831 7.26028 13.9105 8.3736C13.2404 9.48274 12.3385 10.5457 11.4216 11.4752C10.5064 12.4031 9.5872 13.1871 8.89203 13.739C8.54474 14.0147 8.25486 14.2314 8.05128 14.378C8.02714 14.3953 8.00431 14.4117 7.98281 14.4269C7.96486 14.4157 7.94601 14.4039 7.92628 14.3914C7.7244 14.2636 7.43627 14.0732 7.09079 13.8269C6.39911 13.3337 5.48385 12.6208 4.57247 11.7422C2.72609 9.96231 1 7.60286 1 5.07663C1 2.83683 2.69259 1.52479 4.53506 1.48406C5.59592 1.52274 6.91819 2.19026 7.54712 3.53449Z" stroke="black" stroke-linecap="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      </span>
+                    <span class="like__count">8</span>
+                  </span>
+                </span>
+                </span>
+                <span class="comment__text"
+                  >Loss of Arctic sea ice is just one of the many changes that
+                  are accelerating it.</span
+                >
+              </div>
+            </li>
+            <li class="written__comment">
+              <img src="img/avatar_three.png" class="comment__avatar"></img>
+              <div class="comment__content">
+                <span class="comment__info">
+                  <span class="comment__item comment__author">Charlie Harris</span>
+                  <span class="comment__item comment__details">
+                  <span class="comment__item comment__time">
+                    <span class="time__icon">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M7.5 14.75C3.63395 14.75 0.5 11.617 0.5 7.75C0.5 3.88502 3.63405 0.75 7.5 0.75C11.366 0.75 14.5 3.88502 14.5 7.75C14.5 11.617 11.366 14.75 7.5 14.75Z" stroke="black"/>
+                        <path d="M11 8.75H7V3.75" stroke="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="15" height="15" fill="white" transform="translate(0 0.25)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </span>
+                    <span class="time__date">Apr 3, 10:34am</span>
+                  </span>
+                  <span class="comment__item comment__likes">
+                    <span class="like__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M7.54712 3.53449L8.00053 4.50358L8.45307 3.53408C9.09744 2.15364 10.4653 1.48389 11.4615 1.48389C12.4158 1.48389 13.2986 1.79506 13.9375 2.38256C14.5694 2.9635 15 3.84834 15 5.07663C15 6.1369 14.5831 7.26028 13.9105 8.3736C13.2404 9.48274 12.3385 10.5457 11.4216 11.4752C10.5064 12.4031 9.5872 13.1871 8.89203 13.739C8.54474 14.0147 8.25486 14.2314 8.05128 14.378C8.02714 14.3953 8.00431 14.4117 7.98281 14.4269C7.96486 14.4157 7.94601 14.4039 7.92628 14.3914C7.7244 14.2636 7.43627 14.0732 7.09079 13.8269C6.39911 13.3337 5.48385 12.6208 4.57247 11.7422C2.72609 9.96231 1 7.60286 1 5.07663C1 2.83683 2.69259 1.52479 4.53506 1.48406C5.59592 1.52274 6.91819 2.19026 7.54712 3.53449Z" stroke="black" stroke-linecap="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="15" height="15" fill="white" transform="translate(0.5 0.5)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      </span>
+                    <span class="like__count">5</span>
+                  </span></span>
+                </span>
+                <span class="comment__text"
+                  >Perhaps they had the same thing in the early 20th
+                  century</span
+                >
+              </div>
+            </li>
+          </ul>
+          <span class="comments__loading">LOADING COMMENTS...</span>
+            <div class="comment__form">
+              <form class="form__insert">
+                <img src="img/comment_avatar.png" alt="Your avatar" class="profile__avatar">
+                <span class="comment__section">
+                  <svg class="comment__attach" width="13" height="20" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 0.5V13.5C13 17.3351 10.0943 20.5 6.5 20.5C2.92268 20.5 0.0161409 17.3326 0 13.5V5C0 5 -0.431578 0.5 3.5 0.5C7.20955 0.5 7 5 7 5V15" stroke="black" stroke-linecap="round"/>
+                    </svg>
+                  <input class="comment__input" placeholder="Write something..." type="text">
+                </span>
+                <button class="comment__button" type="submit">
+                  <div class="submit__arrow"></div>
+                  Submit
+                </button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__mobile">
+        <p class="next__description">NEXT STORY</p>
+        <p class="next__header">
+          New battery for smartphones can be charged in a minute
+        </p>
+        <div class="next__arrow"></div>
+      </div>
+      <div class="footer__tablet">
+        <p class="next__description">NEXT STORY</p>
+        <button class="next__button">
+          <div class="next__arrow"></div>
+        </button>
+      </div>
+      <div class="footer__desktop">
+        <span class="footer__atags">
+          <a href="" class="tag__a">About us</a>
+          <a href="" class="tag__a">Terms & Conditions</a>
+          <a href="" class="tag__a">Privacy Policy</a>
+        </span>
+        <span class="footer__socials">
+          <span class="socials">
+            <svg class="facebook" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0546 0.25H0.879403C0.393672 0.25 0 0.643612 0 1.1294V15.3046C0 15.7902 0.393672 16.184 0.879403 16.184H8.51081V10.0135H6.43433V7.60875H8.51081V5.83531C8.51081 3.77722 9.76782 2.65657 11.6038 2.65657C12.4832 2.65657 13.239 2.72206 13.4593 2.75131V4.90212L12.186 4.90272C11.1875 4.90272 10.9941 5.37716 10.9941 6.0734V7.60875H13.3755L13.0654 10.0135H10.9941V16.184H15.0546C15.5402 16.184 15.934 15.7902 15.934 15.3046V1.1294C15.934 0.643612 15.5402 0.25 15.0546 0.25Z" fill="black"/>
+            </svg>
+            <svg class="twitter "width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.025 4.09112C14.9 9.95963 11.275 14.0421 5.77499 14.2972C3.52499 14.4248 1.89999 13.6593 0.399994 12.7663C2.02499 13.0215 4.14999 12.3836 5.27499 11.363C3.64999 11.2354 2.64999 10.3424 2.14999 8.93902C2.64999 9.0666 3.14999 8.93902 3.52499 8.93902C2.02499 8.42871 1.02499 7.53568 0.899994 5.49446C1.27499 5.74961 1.77499 5.87719 2.27499 5.87719C1.14999 5.23931 0.399994 2.81536 1.27499 1.28445C2.89999 3.07051 4.89999 4.60143 8.14999 4.85658C7.27499 1.28445 12.025 -0.629196 13.9 1.79475C14.775 1.66718 15.4 1.28445 16.025 1.02929C15.775 1.92233 15.275 2.43263 14.65 2.94294C15.275 2.81536 15.9 2.68779 16.4 2.43263C16.275 3.07051 15.65 3.58082 15.025 4.09112Z" fill="black"/>
+            </svg>
+            <svg class="instagram" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4 0H1.6C0.72 0 0 0.72 0 1.6V14.4C0 15.28 0.72 16 1.6 16H14.4C15.28 16 16 15.28 16 14.4V1.6C16 0.72 15.28 0 14.4 0ZM8 4.8C9.76 4.8 11.2 6.24 11.2 8C11.2 9.76 9.76 11.2 8 11.2C6.24 11.2 4.8 9.76 4.8 8C4.8 6.24 6.24 4.8 8 4.8ZM2 14.4C1.76 14.4 1.6 14.24 1.6 14V7.2H3.28C3.2 7.44 3.2 7.76 3.2 8C3.2 10.64 5.36 12.8 8 12.8C10.64 12.8 12.8 10.64 12.8 8C12.8 7.76 12.8 7.44 12.72 7.2H14.4V14C14.4 14.24 14.24 14.4 14 14.4H2ZM14.4 3.6C14.4 3.84 14.24 4 14 4H12.4C12.16 4 12 3.84 12 3.6V2C12 1.76 12.16 1.6 12.4 1.6H14C14.24 1.6 14.4 1.76 14.4 2V3.6Z" fill="black"/>
+            </svg>
+          </span>
+          <span class="rights">© 2015 All rights reserved.</span>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

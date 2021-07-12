@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__bar">
+        <div class="nav__corner left-corner">
+          <svg
+            class="nav__icon menu__icon"
+            width="40"
+            height="34"
+            viewBox="0 0 40 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M0 33H40"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M0 17H30"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M0 1H40"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="40" height="34" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="nav__span">CALENDAR</span>
+        </div>
+        <svg
+          class="nav__icon page__icon"
+          width="44"
+          height="44"
+          viewBox="0 0 44 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.6248 5.58449C33.6248 2.85532 35.837 0.642891 38.5534 0.642891C41.2754 0.642891 43.482 2.84945 43.482 5.58449L43.482 38.4156C43.482 41.1447 41.2698 43.3572 38.5534 43.3572C35.8314 43.3572 33.6248 41.1506 33.6248 38.4156L33.6248 5.58449Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.6248 5.58449C33.6248 2.85532 35.837 0.642891 38.5534 0.642891C41.2754 0.642891 43.482 2.84945 43.482 5.58449L43.482 38.4156C43.482 41.1447 41.2698 43.3572 38.5534 43.3572C35.8314 43.3572 33.6248 41.1506 33.6248 38.4156L33.6248 5.58449Z"
+            fill="url(#paint0_linear)"
+          />
+          <rect
+            x="0.786118"
+            y="0.642822"
+            width="9.94927"
+            height="42.7143"
+            rx="4.97463"
+            fill="white"
+          />
+          <rect
+            x="0.786118"
+            y="0.642822"
+            width="9.94927"
+            height="42.7143"
+            rx="4.97463"
+            fill="url(#paint1_linear)"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M42.0412 34.9954C43.9691 36.9233 43.9678 40.0505 42.047 41.9713C40.1223 43.896 37.0046 43.8989 35.0711 41.9654L2.3236 9.2179C0.395631 7.28993 0.396922 4.16279 2.31773 2.24198C4.24246 0.317255 7.36019 0.314391 9.29365 2.24785L42.0412 34.9954Z"
+            fill="white"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="36.1996"
+              y1="22.9575"
+              x2="36.1996"
+              y2="43.3572"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="white" stop-opacity="0.5" />
+              <stop offset="1" stop-opacity="0.3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear"
+              x1="8.13656"
+              y1="21.0425"
+              x2="8.13656"
+              y2="0.642822"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="white" stop-opacity="0.5" />
+              <stop offset="1" stop-opacity="0.3" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="nav__corner right-corner">
+          <div class="dropdown__icon"></div>
+          <svg
+            class="nav__icon search__icon"
+            width="42"
+            height="44"
+            viewBox="0 0 42 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <circle
+                r="20"
+                transform="matrix(-1 0 0 1 21 21)"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M35 37L41.1847 43.1847"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="42"
+                  height="44"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 42 0)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <img src="img/nav__avatar.png" alt="Avatar" class="nav__avatar" />
+          <svg
+            class="nav__icon bookmark__icon"
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7931 15.5448L0.5 20.2235V0.5H20.5V20.191L11.2236 15.5528C11.0887 15.4853 10.9305 15.4824 10.7931 15.5448Z"
+              stroke="white"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path d="M7 6.5H14" stroke="white" stroke-linecap="square" />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="calendar__div">
+        <div class="calendar__preheader">
+          <button class="preheader__mobile">2015</button>
+          <button class="preheader__button preheader-active">2015</button>
+          <button class="preheader__button">2014</button>
+          <button class="preheader__button">2013</button>
+          <button class="preheader__button">2012</button>
+        </div>
+        <div class="calendar__header">
+          <button class="calendar__button">
+            <div class="left__arrow"></div>
+          </button>
+          <button class="calendar__button button-tablet">
+            Month
+            <div class="dropdown__arrow"></div>
+          </button>
+          <h2 class="current__month">OCTOBER</h2>
+          <button class="calendar__button">
+            <div class="right__arrow"></div>
+          </button>
+          <button class="calendar__button button-tablet">
+            2015
+            <div class="dropdown__arrow"></div>
+          </button>
+        </div>
+        <table class="row-mobile">
+          <tr class="row-days">
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+          </tr>
+        </table>
+        <div class="tablet-div">
+          <button class="arrow-tablet">
+            <div class="left__arrow"></div>
+          </button>
+          <table class="table-tablet">
+            <tr class="days__row">
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+              <th>SUN</th>
+            </tr>
+            <tr class="days__number">
+              <td class="notcurrent__month">28</td>
+              <td class="notcurrent__month">29</td>
+              <td class="notcurrent__month">30</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr class="days__number">
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr class="days__number">
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+            </tr>
+            <tr class="days__number">
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+            </tr>
+            <tr class="days__number">
+              <td>26</td>
+              <td class="current__day">27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              <td class="notcurrent__month">1</td>
+            </tr>
+          </table>
+          <button class="arrow-tablet">
+            <div class="right__arrow"></div>
+          </button>
+        </div>
+        <table class="calendar__table">
+          <tr class="days__row">
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+          </tr>
+          <tr class="days__number">
+            <td class="notcurrent__month">28</td>
+            <td class="notcurrent__month">29</td>
+            <td class="notcurrent__month">30</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr class="days__number">
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr class="days__number">
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+          </tr>
+          <tr class="days__number">
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+          </tr>
+          <tr class="days__number">
+            <td>26</td>
+            <td class="current__day">27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="notcurrent__month">1</td>
+          </tr>
+        </table>
+        <div class="calendar__footer">
+          <div class="footer__arrow"></div>
+          <svg
+            class="footer__icon"
+            width="26"
+            height="23"
+            viewBox="0 0 26 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M7.33444 21.1123L1.14023 11.1063L7.34122 0.612305H18.7706L24.9716 11.1063L18.7774 21.1123H7.33444Z"
+                stroke="white"
+              />
+              <circle cx="13.0559" cy="11.1123" r="3" stroke="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="25"
+                  height="22"
+                  fill="white"
+                  transform="translate(0.555908 0.112305)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <table class="table-mobile">
+        <tr class="days__mobile">
+          <td class="notcurrent__month">28</td>
+          <td class="notcurrent__month">29</td>
+          <td class="notcurrent__month">30</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr class="days__mobile">
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+        </tr>
+        <tr class="days__mobile">
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+        </tr>
+        <tr class="days__mobile">
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
+        <tr class="days__mobile">
+          <td>26</td>
+          <td class="current__day">27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+          <td class="notcurrent__month">1</td>
+        </tr>
+      </table>
+      <div class="article">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/nasa__tablet.png" />
+          <source media="(min-width: 1024px)" srcset="img/nasa__desktop.png" />
+          <img
+            src="img/article__nasa.png"
+            alt="Red planet"
+            class="article__image"
+          />
+        </picture>
+        <div class="article__content">
+          <h4 class="article__title">
+            NASA goes to Mars: Astronauts could land on Red Planet by 2039
+          </h4>
+          <div class="article__info">
+            <div class="info__source">
+              <svg
+                class="source__icon"
+                width="20"
+                height="30"
+                viewBox="0 0 20 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M0 25C5.33333 19.4772 5.33333 10.5228 0 5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M14 30C22 21.7157 22 8.28427 14 0"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="20" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="span__font source__span">SPACE.com</span>
+            </div>
+            <span class="span__font info__category">SCIENCE</span>
+          </div>
+        </div>
+      </div>
+      <div class="article article-mobile">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/mobile__tablet.png" />
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/mobile__desktop.png"
+          />
+          <img
+            src="img/article__nasa.png"
+            alt="Red planet"
+            class="article__image"
+          />
+        </picture>
+        <div class="article__content">
+          <h4 class="article__title">
+            New battery for smartphones can be charged in a minute
+          </h4>
+          <div class="article__info">
+            <div class="info__source">
+              <svg
+                class="source__icon"
+                width="20"
+                height="30"
+                viewBox="0 0 20 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M0 25C5.33333 19.4772 5.33333 10.5228 0 5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M14 30C22 21.7157 22 8.28427 14 0"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="20" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="span__font source__span">SPACE.com</span>
+            </div>
+            <span class="span__font info__category">SCIENCE</span>
+          </div>
+        </div>
+      </div>
+      <div class="article article-arctic">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/arctic__desktop.png"
+          />
+          <img
+            src="img/article__arctic.png"
+            alt="Red planet"
+            class="article__image"
+          />
+        </picture>
+        <div class="article__content">
+          <h4 class="article__title">
+            Arctic sea ice hits lowest winter maximum on record
+          </h4>
+          <div class="article__info">
+            <div class="info__source">
+              <svg
+                class="source__icon"
+                width="20"
+                height="30"
+                viewBox="0 0 20 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M0 25C5.33333 19.4772 5.33333 10.5228 0 5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M14 30C22 21.7157 22 8.28427 14 0"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="20" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="span__font source__span">CNN</span>
+            </div>
+            <span class="span__font info__category">Environment</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

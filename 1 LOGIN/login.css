@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+      180.98deg,
+      rgba(255, 106, 58, 0.8) 0.84%,
+      rgba(0, 0, 0, 0.6) 99.19%
+    ),
+    url("img/login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  height: auto;
+  padding: 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.loginLogo {
+  margin-top: 100px;
+  width: 107px;
+  height: auto;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.username-container {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.password-container {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.input-symbol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: auto;
+  margin: 15px 0 15px 20px;
+}
+
+.username-input {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  line-height: 24px;
+  padding: 16px 25px 16px 60px;
+  border-radius: 28px;
+}
+
+.username-input::placeholder {
+  color: white;
+}
+
+.password-input {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  line-height: 24px;
+  padding: 16px 25px 16px 60px;
+  border-radius: 28px;
+}
+
+.password-input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.signup-button {
+  background-color: #f96332;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 55px;
+  border-radius: 28px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 26px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+@media screen and (min-width: 425px) {
+  body {
+    background-image: linear-gradient(
+        180.98deg,
+        rgba(255, 106, 58, 0.8) 0.84%,
+        rgba(0, 0, 0, 0.6) 99.19%
+      ),
+      url("img/tablet.png");
+  }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginLogo {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+  .form-container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(
+        180.98deg,
+        rgba(255, 106, 58, 0.8) 0.84%,
+        rgba(0, 0, 0, 0.6) 99.19%
+      ),
+      url("img/web.png");
+  }
+}

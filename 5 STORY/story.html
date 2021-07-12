@@ -1,0 +1,467 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Story</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="story.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__bar">
+        <svg
+          class="nav__icon icon__back"
+          width="22"
+          height="40"
+          viewBox="0 0 22 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0)">
+            <path
+              d="M21.5 40L0.5 20L21.5 1"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect
+                width="21"
+                height="40"
+                fill="white"
+                transform="translate(0.5)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <svg
+          class="nav__icon icon__comments"
+          width="44"
+          height="46"
+          viewBox="0 0 44 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 23H23.4675"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+          <path
+            d="M12 14H33.0238"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+          <path
+            d="M18 35.8567H1V1H43V35.8567H33C32.4477 35.8567 32 36.3044 32 36.8567V43.089C32 43.8869 31.1115 44.3634 30.4468 43.922L18.5532 36.0237C18.3893 35.9148 18.1968 35.8567 18 35.8567Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <svg
+          class="nav__icon icon__text"
+          width="52"
+          height="36"
+          viewBox="0 0 52 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M43.3234 12.3974C45.8677 12.3974 47.9471 13.0223 49.5263 14.2943C51.1062 15.5669 51.9109 17.541 51.9753 20.1396L51.9795 20.4821L52.0003 33.3945C52.0019 33.9467 51.5554 34.3958 51.0032 34.3974C50.4903 34.3989 50.0665 34.014 50.0073 33.5169L50.0001 33.3582L49.9945 31.1707C49.905 31.2994 49.8123 31.4262 49.7163 31.5512C48.8298 32.7054 47.6518 33.6354 46.1949 34.3398C44.7252 35.0504 42.8963 35.3974 40.7108 35.3974C39.7978 35.3974 38.8966 35.2559 38.0109 34.974C37.1169 34.6894 36.303 34.2732 35.5735 33.7265C34.816 33.1589 34.1991 32.4311 33.7267 31.5526C33.2412 30.6498 33.0003 29.6317 33.0003 28.5132C33.0003 26.9279 33.4322 25.5677 34.3036 24.4703C35.1307 23.4285 36.2287 22.6018 37.5837 21.991C38.8844 21.4046 40.3357 20.9919 41.9357 20.7507C43.2751 20.5487 44.6534 20.4334 46.0705 20.4046L46.7822 20.3974H49.9783L49.9755 20.1712C49.9228 18.1297 49.3435 16.7151 48.2717 15.8519C47.077 14.8895 45.4394 14.3974 43.3234 14.3974C42.1899 14.3974 40.9951 14.6112 39.7369 15.0432C38.516 15.4623 37.5086 16.0698 36.7033 16.866C36.3106 17.2543 35.6774 17.2507 35.2891 16.858C34.9008 16.4652 34.9044 15.8321 35.2972 15.4438C36.3227 14.4299 37.5899 13.6657 39.0875 13.1516C40.5477 12.6502 41.9604 12.3974 43.3234 12.3974ZM14.8057 0L16.6548 0.0336267L29.9318 34.0336C30.1326 34.5481 29.8785 35.128 29.364 35.3289C28.8863 35.5154 28.3522 35.3096 28.1174 34.8673L28.0688 34.7611L24.412 25.397H5.986L1.91791 34.7947C1.71412 35.2654 1.19191 35.4998 0.712572 35.3552L0.60288 35.315C0.132273 35.1112 -0.102192 34.589 0.0424295 34.1097L0.082598 34L14.8057 0ZM49.9793 22.3974H46.7822C45.2124 22.3974 43.6964 22.5078 42.2339 22.7283C40.8089 22.9432 39.5334 23.3059 38.4056 23.8143C37.332 24.2982 36.4913 24.9312 35.8699 25.7139C35.2926 26.441 35.0003 27.3615 35.0003 28.5132C35.0003 29.3104 35.1641 30.0028 35.4881 30.6053C35.8252 31.2321 36.2522 31.7359 36.7729 32.1261C37.3216 32.5373 37.9349 32.8509 38.6175 33.0682C39.3081 33.288 40.0047 33.3974 40.7108 33.3974C42.6155 33.3974 44.1525 33.1058 45.3244 32.5392C46.5091 31.9664 47.4401 31.2314 48.1301 30.333C48.7601 29.5127 49.2133 28.5952 49.4918 27.5735L49.9743 25.412L49.9793 25.4184V22.3974ZM15.6753 3.02337L6.852 23.397H23.631L15.6753 3.02337Z"
+            fill="white"
+          />
+        </svg>
+
+        <svg
+          class="nav__icon icon__bookmark"
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.536 30.1142L1 40.3473V1H41V40.3473L21.464 30.1142C21.1734 29.9619 20.8266 29.9619 20.536 30.1142Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13 11H29"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+        </svg>
+        <svg
+          class="nav__icon icon__share"
+          width="39"
+          height="39"
+          viewBox="0 0 39 39"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.5"
+            d="M39 0V31C39 31.5523 38.5523 32 38 32C37.4872 32 37.0645 31.614 37.0067 31.1166L37 31V3.256L1.41421 38.8423L0 37.4281L35.428 2H8C7.48716 2 7.06449 1.61396 7.00673 1.11662L7 1C7 0.487164 7.38604 0.0644928 7.88338 0.00672773L8 0L39 0Z"
+            fill="white"
+          />
+        </svg>
+      </nav>
+      <div class="choose__options">
+        <div class="options__typeface">
+          <span class="options__instruction">CHOOSE TYPEFACE</span>
+          <span class="options__option">SANS SERIF</span>
+        </div>
+        <div class="options__brigtness">
+          <span class="brightness__dark">
+            <svg
+              class="icon__dark"
+              width="32"
+              height="40"
+              viewBox="0 0 32 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="path-1-inside-1" fill="white">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M30 2.67564C24.022 6.13374 20 12.5972 20 20C20 27.4028 24.022 33.8663 30 37.3244C27.0583 39.0261 23.6429 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C23.6429 0 27.0583 0.973943 30 2.67564Z"
+                />
+              </mask>
+              <path
+                d="M30 2.67564L31.0015 4.40686L33.9942 2.67564L31.0015 0.944433L30 2.67564ZM30 37.3244L31.0015 39.0556L33.9942 37.3244L31.0015 35.5931L30 37.3244ZM22 20C22 13.34 25.616 7.52216 31.0015 4.40686L28.9986 0.944433C22.428 4.74532 18 11.8544 18 20H22ZM31.0015 35.5931C25.616 32.4778 22 26.66 22 20H18C18 28.1456 22.428 35.2547 28.9986 39.0556L31.0015 35.5931ZM28.9986 35.5931C26.353 37.1235 23.2819 38 20 38V42C24.0038 42 27.7635 40.9286 31.0015 39.0556L28.9986 35.5931ZM20 38C10.0589 38 2 29.9411 2 20H-2C-2 32.1503 7.84974 42 20 42V38ZM2 20C2 10.0589 10.0589 2 20 2V-2C7.84974 -2 -2 7.84974 -2 20H2ZM20 2C23.2819 2 26.353 2.8765 28.9986 4.40686L31.0015 0.944433C27.7635 -0.928617 24.0038 -2 20 -2V2Z"
+                fill="white"
+                mask="url(#path-1-inside-1)"
+              />
+            </svg>
+          </span>
+          <span class="brightness__light">
+            <svg
+              class="icon__light"
+              width="43"
+              height="42"
+              viewBox="0 0 43 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.38187 6.7266L12.9378 11.2826M22.5002 29.9999C27.1946 29.9999 31.0002 26.1944 31.0002 21.4999C31.0002 16.8055 27.1946 12.9999 22.5002 12.9999C17.8057 12.9999 14.0002 16.8055 14.0002 21.4999C14.0002 26.1944 17.8057 29.9999 22.5002 29.9999ZM23.0002 6.70826V0.265137V6.70826ZM23.0002 41.7083V35.2651V41.7083ZM36.5278 22.0499H42.971H36.5278ZM0.527832 22.0499H6.97096H0.527832ZM32.7268 11.097L37.2828 6.54101L32.7268 11.097ZM7.72684 36.097L12.2828 31.541L7.72684 36.097ZM33.3819 31.7266L37.9379 36.2826L33.3819 31.7266Z"
+                stroke="#EC5D2F"
+                stroke-width="2"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="options__size">
+          <span class="size__small">
+            <svg
+              class="size__icon icon__small"
+              width="28"
+              height="34"
+              viewBox="0 0 28 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.8052 -0.397461L15.6543 -0.363834L28.9313 33.6362C29.1322 34.1506 28.878 34.7305 28.3635 34.9314C27.8858 35.118 27.3517 34.9121 27.117 34.4698L27.0683 34.3637L23.4115 24.9995H4.98551L0.917423 34.3973C0.713635 34.8679 0.191424 35.1024 -0.287916 34.9577L-0.397608 34.9176C-0.868215 34.7138 -1.10268 34.1916 -0.958059 33.7122L-0.91789 33.6025L13.8052 -0.397461ZM14.6748 2.62591L5.85151 22.9995H22.6305L14.6748 2.62591Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+
+          <div class="size__slider">
+            <div class="size"></div>
+            <div class="size__selector"></div>
+            <div class="size size__unselected"></div>
+          </div>
+
+          <span class="size__large">
+            <svg
+              class="size__icon icon__large"
+              width="38"
+              height="46"
+              viewBox="0 0 28 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.8052 -0.397461L15.6543 -0.363834L28.9313 33.6362C29.1322 34.1506 28.878 34.7305 28.3635 34.9314C27.8858 35.118 27.3517 34.9121 27.117 34.4698L27.0683 34.3637L23.4115 24.9995H4.98551L0.917423 34.3973C0.713635 34.8679 0.191424 35.1024 -0.287916 34.9577L-0.397608 34.9176C-0.868215 34.7138 -1.10268 34.1916 -0.958059 33.7122L-0.91789 33.6025L13.8052 -0.397461ZM14.6748 2.62591L5.85151 22.9995H22.6305L14.6748 2.62591Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="post__header">
+        <div class="choose__header">
+          <div class="choose__brightness">
+            <div class="choose__center choose__light">
+              <span class="choose__sun">
+                <svg
+                  class="icon__sun"
+                  width="43"
+                  height="42"
+                  viewBox="0 0 43 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.38187 6.7266L12.9378 11.2826M22.5002 29.9999C27.1946 29.9999 31.0002 26.1944 31.0002 21.4999C31.0002 16.8055 27.1946 12.9999 22.5002 12.9999C17.8057 12.9999 14.0002 16.8055 14.0002 21.4999C14.0002 26.1944 17.8057 29.9999 22.5002 29.9999ZM23.0002 6.70826V0.265137V6.70826ZM23.0002 41.7083V35.2651V41.7083ZM36.5278 22.0499H42.971H36.5278ZM0.527832 22.0499H6.97096H0.527832ZM32.7268 11.097L37.2828 6.54101L32.7268 11.097ZM7.72684 36.097L12.2828 31.541L7.72684 36.097ZM33.3819 31.7266L37.9379 36.2826L33.3819 31.7266Z"
+                    stroke="#EC5D2F"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div class="choose__center choose__darkness">
+              <span class="choose__moon">
+                <svg
+                  class="icon__moon"
+                  width="32"
+                  height="40"
+                  viewBox="0 0 32 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask id="path-1-inside-1" fill="white">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M30 2.67564C24.022 6.13374 20 12.5972 20 20C20 27.4028 24.022 33.8663 30 37.3244C27.0583 39.0261 23.6429 40 20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C23.6429 0 27.0583 0.973943 30 2.67564Z"
+                    />
+                  </mask>
+                  <path
+                    d="M30 2.67564L31.0015 4.40686L33.9942 2.67564L31.0015 0.944433L30 2.67564ZM30 37.3244L31.0015 39.0556L33.9942 37.3244L31.0015 35.5931L30 37.3244ZM22 20C22 13.34 25.616 7.52216 31.0015 4.40686L28.9986 0.944433C22.428 4.74532 18 11.8544 18 20H22ZM31.0015 35.5931C25.616 32.4778 22 26.66 22 20H18C18 28.1456 22.428 35.2547 28.9986 39.0556L31.0015 35.5931ZM28.9986 35.5931C26.353 37.1235 23.2819 38 20 38V42C24.0038 42 27.7635 40.9286 31.0015 39.0556L28.9986 35.5931ZM20 38C10.0589 38 2 29.9411 2 20H-2C-2 32.1503 7.84974 42 20 42V38ZM2 20C2 10.0589 10.0589 2 20 2V-2C7.84974 -2 -2 7.84974 -2 20H2ZM20 2C23.2819 2 26.353 2.8765 28.9986 4.40686L31.0015 0.944433C27.7635 -0.928617 24.0038 -2 20 -2V2Z"
+                    fill="white"
+                    mask="url(#path-1-inside-1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="choose__typeface">
+            <span class="choose__font choose__instruction"
+              >CHOOSE TYPEFACE</span
+            >
+            <span class="choose__font suggested__typeface">SANS SERIF</span>
+            <div class="choose__icon"></div>
+          </div>
+          <div class="choose__size">
+            <span class="choose__small">
+              <svg
+                class="small__a"
+                width="28"
+                height="34"
+                viewBox="0 0 28 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.8052 -0.397461L15.6543 -0.363834L28.9313 33.6362C29.1322 34.1506 28.878 34.7305 28.3635 34.9314C27.8858 35.118 27.3517 34.9121 27.117 34.4698L27.0683 34.3637L23.4115 24.9995H4.98551L0.917423 34.3973C0.713635 34.8679 0.191424 35.1024 -0.287916 34.9577L-0.397608 34.9176C-0.868215 34.7138 -1.10268 34.1916 -0.958059 33.7122L-0.91789 33.6025L13.8052 -0.397461ZM14.6748 2.62591L5.85151 22.9995H22.6305L14.6748 2.62591Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <div class="choose__slider">
+              <div class="choose"></div>
+              <div class="choose__selector"></div>
+              <div class="choose choose__unselected"></div>
+            </div>
+            <div class="choose__large">
+              <svg
+                class="big__a"
+                width="38"
+                height="46"
+                viewBox="0 0 28 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.8052 -0.397461L15.6543 -0.363834L28.9313 33.6362C29.1322 34.1506 28.878 34.7305 28.3635 34.9314C27.8858 35.118 27.3517 34.9121 27.117 34.4698L27.0683 34.3637L23.4115 24.9995H4.98551L0.917423 34.3973C0.713635 34.8679 0.191424 35.1024 -0.287916 34.9577L-0.397608 34.9176C-0.868215 34.7138 -1.10268 34.1916 -0.958059 33.7122L-0.91789 33.6025L13.8052 -0.397461ZM14.6748 2.62591L5.85151 22.9995H22.6305L14.6748 2.62591Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="img/post_background_tablet.png"
+          />
+          <img
+            class="post__image"
+            src="img/post_background.png"
+            alt="Arctic sea ice extent hits record"
+          />
+        </picture>
+        <h2 class="header__title">
+          Arctic sea ice extent hits record low for winter maximum
+        </h2>
+        <div class="header__icons">
+          <span class="header__detail">
+            <svg
+              class="header__icon header__comment"
+              width="44"
+              height="46"
+              viewBox="0 0 44 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 23H23.4675"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+              <path
+                d="M12 14H33.0238"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+              <path
+                d="M18 35.8567H1V1H43V35.8567H33C32.4477 35.8567 32 36.3044 32 36.8567V43.089C32 43.8869 31.1115 44.3634 30.4468 43.922L18.5532 36.0237C18.3893 35.9148 18.1968 35.8567 18 35.8567Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="header__detail">
+            <svg
+              class="header__icon header__bookmark"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.536 30.1142L1 40.3473V1H41V40.3473L21.464 30.1142C21.1734 29.9619 20.8266 29.9619 20.536 30.1142Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13 11H29"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+          <span class="header__detail">
+            <svg
+              class="header__icon header__share"
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.5"
+                d="M39 0V31C39 31.5523 38.5523 32 38 32C37.4872 32 37.0645 31.614 37.0067 31.1166L37 31V3.256L1.41421 38.8423L0 37.4281L35.428 2H8C7.48716 2 7.06449 1.61396 7.00673 1.11662L7 1C7 0.487164 7.38604 0.0644928 7.88338 0.00672773L8 0L39 0Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="post__content">
+        <div class="post__info">
+          <span class="post__item item__source">
+            <span class="item__lines">
+              <svg
+                class="source__svg"
+                width="22"
+                height="32"
+                viewBox="0 0 22 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 26C6.33333 20.4772 6.33333 11.5228 1 6"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M15 31C23 22.7157 23 9.28427 15 1"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="post__detail"> CNN </span>
+          </span>
+
+          <span class="post__item item__date">
+            <span class="item__clock">
+              <svg
+                class="clock__svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 29C7.26791 29 1 22.7341 1 15C1 7.27005 7.26809 1 15 1C22.7319 1 29 7.27005 29 15C29 22.7341 22.7321 29 15 29Z"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path d="M22 17H14V7" stroke="black" stroke-width="2" />
+              </svg>
+            </span>
+            <span class="post__detail"> Apr 3, 2015 </span>
+          </span>
+
+          <span class="post__item item__category">
+            <span class="post__detail detail__category">ENVIRONMENT</span>
+          </span>
+        </div>
+        <p class="post__paragraph">
+          According to the National Oceanic and Atmospheric Administration, Ted
+          Scambos, NSIDC lead scientist, puts the potentially record low maximum
+          sea ice extent this year down to low ice extent in the Pacific and a
+          late drop in ice extent in the Barents Sea.
+        </p>
+        <div class="post__container">
+          <img
+            src="img/post_mountains.png"
+            alt="Mountains"
+            class="post__picture"
+          />
+          <blockquote class="post__quote">
+            <p class="quote__content">
+              “Over the span of the satellite record, Arctic sea ice has been
+              declining significantly, while sea ice in the Antarctic has
+              increased very slightly”
+            </p>
+            <footer class="quote__author">- NOAA</footer>
+          </blockquote>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

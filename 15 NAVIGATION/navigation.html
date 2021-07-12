@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="navigation.css" />
+  </head>
+  <body class="is-nav-open">
+    <header>
+      <nav class="nav__bar">
+        <div class="nav__icons">
+          <span class="nav__corner">
+            <svg
+              class="item__icon menu__icon"
+              width="40"
+              height="34"
+              viewBox="0 0 40 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M0 33H40"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M0 17H30"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M0 1H40"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="40" height="34" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="channels__span">CHANNELS</span>
+          </span>
+          <svg
+            class="item__icon page__icon"
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M33.6249 5.58449C33.6249 2.85532 35.837 0.642891 38.5534 0.642891C41.2754 0.642891 43.482 2.84945 43.482 5.58449L43.482 38.4156C43.482 41.1447 41.2699 43.3572 38.5534 43.3572C35.8314 43.3572 33.6249 41.1506 33.6249 38.4156L33.6249 5.58449Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M33.6249 5.58449C33.6249 2.85532 35.837 0.642891 38.5534 0.642891C41.2754 0.642891 43.482 2.84945 43.482 5.58449L43.482 38.4156C43.482 41.1447 41.2699 43.3572 38.5534 43.3572C35.8314 43.3572 33.6249 41.1506 33.6249 38.4156L33.6249 5.58449Z"
+              fill="url(#paint0_linear)"
+            />
+            <rect
+              x="0.786133"
+              y="0.642822"
+              width="9.94927"
+              height="42.7143"
+              rx="4.97463"
+              fill="white"
+            />
+            <rect
+              x="0.786133"
+              y="0.642822"
+              width="9.94927"
+              height="42.7143"
+              rx="4.97463"
+              fill="url(#paint1_linear)"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M42.0412 34.9955C43.9691 36.9235 43.9678 40.0506 42.047 41.9714C40.1223 43.8961 37.0046 43.899 35.0711 41.9655L2.3236 9.21802C0.395638 7.29006 0.396929 4.16291 2.31774 2.2421C4.24247 0.317377 7.3602 0.314513 9.29366 2.24797L42.0412 34.9955Z"
+              fill="white"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear"
+                x1="36.1996"
+                y1="22.9575"
+                x2="36.1996"
+                y2="43.3572"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-opacity="0.3" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear"
+                x1="8.13657"
+                y1="21.0425"
+                x2="8.13657"
+                y2="0.642822"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.5" />
+                <stop offset="1" stop-opacity="0.3" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="nav__corner">
+            <svg
+              class="item__icon search__icon"
+              width="42"
+              height="44"
+              viewBox="0 0 42 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <circle
+                  r="20"
+                  transform="matrix(-1 0 0 1 21 21)"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <path
+                  d="M35 37L41.1847 43.1847"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect
+                    width="42"
+                    height="44"
+                    fill="white"
+                    transform="matrix(-1 0 0 1 42 0)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <img src="img/nav__avatar.png" alt="" class="nav__avatar" />
+            <svg
+              class="item__icon bookmark__icon"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.7931 15.5448L0.5 20.2235V0.5H20.5V20.191L11.2236 15.5528C11.0887 15.4853 10.9305 15.4824 10.7931 15.5448Z"
+                stroke="white"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path d="M7 6.5H14" stroke="white" stroke-linecap="square" />
+            </svg>
+          </span>
+        </div>
+        <div class="nav__categories">
+          <button class="category__button button-active">
+            <span class="category__span span-active">Following</span>
+          </button>
+          <button class="category__button">
+            <span class="category__span">Popular</span>
+          </button>
+          <button class="category__button">
+            <span class="category__span">Explore</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main >
+      <div class="channels__grid">
+        <div class="grid__div">
+          <img
+            src="img/div__science.png"
+            alt="Sky"
+            class="category__background"
+          />
+          <div class="title-mobile">Science</div>
+          <div class="grid__header">
+            <h1 class="grid__title">Science</h1>
+            <div class="grid__following">
+              <span class="follow-active">Following</span>
+              <span class="follow-passive">Unfollowing</span>
+            </div>
+          </div>
+          <div class="grid__footer">
+            <h3 class="grid__count">234K Followers</h3>
+            <span class="grid__icons">
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+            </span>
+          </div>
+        </div>
+        <div class="grid__div">
+          <img
+            src="img/div__fashion.png"
+            alt="Fashiongirl"
+            class="category__background"
+          />
+          <div class="title-mobile">Fashion</div>
+          <div class="grid__header">
+            <h1 class="grid__title">Fashion</h1>
+            <div class="grid__following">
+              <span class="follow-active">Following</span>
+              <span class="follow-passive">Unfollowing</span>
+            </div>
+          </div>
+          <div class="grid__footer">
+            <h3 class="grid__count">145K Followers</h3>
+            <span class="grid__icons">
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+            </span>
+          </div>
+        </div>
+        <div class="grid__div">
+          <img
+            src="img/div__technology.png"
+            alt="Binoculars"
+            class="category__background"
+          />
+          <div class="title-mobile">Technology</div>
+          <div class="grid__header">
+            <h1 class="grid__title">Technology</h1>
+            <div class="grid__following">
+              <span class="follow-active">Following</span>
+              <span class="follow-passive">Unfollowing</span>
+            </div>
+          </div>
+          <div class="grid__footer">
+            <h3 class="grid__count">289K Followers</h3>
+            <span class="grid__icons">
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+            </span>
+          </div>
+        </div>
+        <div class="grid__div">
+          <img
+            src="img/div__environment.png"
+            alt="Wood"
+            class="category__background"
+          />
+          <div class="title-mobile">Environment</div>
+          <div class="grid__header">
+            <h1 class="grid__title">Environment</h1>
+            <div class="grid__following">
+              <span class="follow-active">Following</span>
+              <span class="follow-passive">Unfollowing</span>
+            </div>
+          </div>
+          <div class="grid__footer">
+            <h3 class="grid__count">673K Followers</h3>
+            <span class="grid__icons">
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+              <img
+                src="img/footer__avatar.png"
+                alt="Profile avatar"
+                class="footer__avatar"
+              />
+            </span>
+          </div>
+        </div>
+        <div class="div-mobile">
+          <img
+            src="img/div__finances.png"
+            alt="Coins"
+            class="category__background"
+          />
+          <div class="title-mobile">Finances</div>
+        </div>
+        <div class="div-mobile">
+          <img src="img/div__auto.png" alt="Car" class="category__background" />
+          <div class="title-mobile">Auto</div>
+        </div>
+      </div>
+    </main>
+    <div class="nav__container">
+      <button class="close__section">
+        <div class="right__arrow"></div>
+        <div class="left__arrow"></div>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <svg
+            class="list__icon news-icon"
+            width="42"
+            height="38"
+            viewBox="0 0 42 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <rect
+                x="1"
+                y="1"
+                width="6.51064"
+                height="6.83889"
+                stroke="white"
+                stroke-width="2"
+              />
+              <rect
+                x="1"
+                y="15.0601"
+                width="6.51064"
+                height="6.83889"
+                stroke="white"
+                stroke-width="2"
+              />
+              <rect
+                x="1"
+                y="29.1611"
+                width="6.51064"
+                height="6.83889"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M15.3191 5.30322H41.3191"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M15.3191 19.3633H41.3191"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M15.3191 32.5806H41.3191"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="42" height="38" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="item__span">NEWS</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon channels-icon"
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask id="path-1-inside-1" fill="white">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM29 14C32.866 14 36 10.866 36 7C36 3.13401 32.866 0 29 0C25.134 0 22 3.13401 22 7C22 10.866 25.134 14 29 14ZM14 29C14 32.866 10.866 36 7 36C3.13401 36 0 32.866 0 29C0 25.134 3.13401 22 7 22C10.866 22 14 25.134 14 29ZM29 36C32.866 36 36 32.866 36 29C36 25.134 32.866 22 29 22C25.134 22 22 25.134 22 29C22 32.866 25.134 36 29 36Z"
+              />
+            </mask>
+            <path
+              d="M12 7C12 9.76142 9.76142 12 7 12V16C11.9706 16 16 11.9706 16 7H12ZM7 2C9.76142 2 12 4.23858 12 7H16C16 2.02944 11.9706 -2 7 -2V2ZM2 7C2 4.23858 4.23858 2 7 2V-2C2.02944 -2 -2 2.02944 -2 7H2ZM7 12C4.23858 12 2 9.76142 2 7H-2C-2 11.9706 2.02944 16 7 16V12ZM34 7C34 9.76142 31.7614 12 29 12V16C33.9706 16 38 11.9706 38 7H34ZM29 2C31.7614 2 34 4.23858 34 7H38C38 2.02944 33.9706 -2 29 -2V2ZM24 7C24 4.23858 26.2386 2 29 2V-2C24.0294 -2 20 2.02944 20 7H24ZM29 12C26.2386 12 24 9.76142 24 7H20C20 11.9706 24.0294 16 29 16V12ZM7 38C11.9706 38 16 33.9706 16 29H12C12 31.7614 9.76142 34 7 34V38ZM-2 29C-2 33.9706 2.02944 38 7 38V34C4.23858 34 2 31.7614 2 29H-2ZM7 20C2.02944 20 -2 24.0294 -2 29H2C2 26.2386 4.23858 24 7 24V20ZM16 29C16 24.0294 11.9706 20 7 20V24C9.76142 24 12 26.2386 12 29H16ZM34 29C34 31.7614 31.7614 34 29 34V38C33.9706 38 38 33.9706 38 29H34ZM29 24C31.7614 24 34 26.2386 34 29H38C38 24.0294 33.9706 20 29 20V24ZM24 29C24 26.2386 26.2386 24 29 24V20C24.0294 20 20 24.0294 20 29H24ZM29 34C26.2386 34 24 31.7614 24 29H20C20 33.9706 24.0294 38 29 38V34Z"
+              fill="white"
+              mask="url(#path-1-inside-1)"
+            />
+          </svg>
+          <span class="item__span">CHANNELS</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon bookmarks-icon"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.536 30.1142L1 40.3473V1H41V40.3473L21.464 30.1142C21.1734 29.9619 20.8266 29.9619 20.536 30.1142Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <span class="item__span">BOOKMARKS</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon overview-icon"
+            width="45"
+            height="44"
+            viewBox="0 0 45 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="22" cy="22" r="21" stroke="white" stroke-width="2" />
+            <path d="M44 23.1001H22V1.1001" stroke="white" stroke-width="2" />
+            <path
+              d="M22 24.1001L35.8486 36.9487"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+          </svg>
+
+          <span class="item__span">OVERVIEW</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon calendar-icon"
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="42"
+              height="42"
+              rx="1"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M9.48145 10.2778H34.2518"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+            <rect
+              x="8.6333"
+              y="19"
+              width="5"
+              height="5"
+              rx="2.5"
+              stroke="white"
+              stroke-width="2"
+            />
+            <rect
+              x="19.6333"
+              y="19"
+              width="5"
+              height="5"
+              rx="2.5"
+              stroke="white"
+              stroke-width="2"
+            />
+            <rect
+              x="30.6333"
+              y="19"
+              width="5"
+              height="5"
+              rx="2.5"
+              stroke="white"
+              stroke-width="2"
+            />
+            <rect
+              x="8.6333"
+              y="29.9165"
+              width="5"
+              height="5"
+              rx="2.5"
+              stroke="white"
+              stroke-width="2"
+            />
+            <rect
+              x="19.6333"
+              y="29.9165"
+              width="5"
+              height="5"
+              rx="2.5"
+              stroke="white"
+              stroke-width="2"
+            />
+            <rect
+              x="31"
+              y="29.9165"
+              width="5"
+              height="5"
+              rx="2.5"
+              stroke="white"
+              stroke-width="2"
+            />
+          </svg>
+
+          <span class="item__span">CALENDAR</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon timeline-icon"
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M30.1328 2.06451C37.8909 5.31511 43.3331 12.9231 43.3331 21.7939C43.3331 33.6198 33.6559 43.2071 21.7191 43.2071C9.78229 43.2071 0.105103 33.6198 0.105103 21.7939C0.105103 12.0178 6.71827 3.77154 15.7542 1.20654"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M29.4884 13.952V0.227539H43.3387"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M31.9822 24.4958H19.4419V10.2324"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="44" height="44" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <span class="item__span">TIMELINE</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon profile-icon"
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="22" cy="22" r="21" stroke="white" stroke-width="2" />
+            <path
+              d="M27.95 17.9833C27.95 21.2729 25.2578 23.9666 21.975 23.9666C18.6922 23.9666 16 21.2729 16 17.9833C16 14.6936 18.6922 12 21.975 12C25.2578 12 27.95 14.6936 27.95 17.9833Z"
+              stroke="white"
+              stroke-width="2"
+            />
+            <mask id="path-3-inside-1" fill="white">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38 35.9532C38 30.5848 27.4 28 22 28C16.6 28 6 30.5848 6 35.9532"
+              />
+            </mask>
+            <path
+              d="M40 35.9532C40 33.8846 38.9616 32.2208 37.6175 30.9775C36.2901 29.7497 34.548 28.8117 32.7616 28.104C29.1906 26.6893 24.9395 26 22 26V30C24.4605 30 28.2094 30.6031 31.2884 31.8228C32.827 32.4324 34.0724 33.1472 34.9013 33.9139C35.7134 34.6651 36 35.3376 36 35.9532H40ZM22 26C19.0605 26 14.8094 26.6893 11.2384 28.104C9.452 28.8117 7.70991 29.7497 6.38255 30.9775C5.03838 32.2208 4 33.8846 4 35.9532H8C8 35.3376 8.28662 34.6651 9.0987 33.9139C9.92759 33.1472 11.173 32.4324 12.7116 31.8228C15.7906 30.6031 19.5395 30 22 30V26Z"
+              fill="white"
+              mask="url(#path-3-inside-1)"
+            />
+          </svg>
+          <span class="item__span">PROFILE</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon widgets-icon"
+            width="46"
+            height="46"
+            viewBox="0 0 46 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="23" cy="23" r="22" stroke="white" stroke-width="2" />
+            <path
+              d="M37 23C37 15.268 30.732 9 23 9C15.268 9 9 15.268 9 23"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <g clip-path="url(#clip0)">
+              <circle
+                cx="23.2322"
+                cy="29.3894"
+                r="3.5"
+                transform="rotate(45 23.2322 29.3894)"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M26.3589 26.5555L30.3639 22.5505"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="10"
+                  height="16"
+                  fill="white"
+                  transform="translate(27.4749 18.1968) rotate(45)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <span class="item__span">WIDGETS</span>
+        </li>
+        <li class="navigation__item">
+          <svg
+            class="list__icon settings-icon"
+            width="50"
+            height="43"
+            viewBox="0 0 50 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5571 42L1.16865 21.988L13.5706 1H36.4294L48.8313 21.988L36.4429 42H13.5571Z"
+              stroke="white"
+              stroke-width="2"
+            />
+            <circle cx="25" cy="22" r="6" stroke="white" stroke-width="2" />
+          </svg>
+          <span class="item__span">SETTINGS</span>
+        </li>
+        <li class="navigation__item desktop-item border-item">
+          <svg
+            class="list__icon contact-icon"
+            width="21"
+            height="17"
+            viewBox="0 0 21 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <rect
+                x="1"
+                y="0.5"
+                width="19"
+                height="16"
+                rx="1.5"
+                stroke="white"
+                stroke-linecap="round"
+              />
+              <path d="M19.5 0.5L10.75 9.5L2 0.5" stroke="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="20"
+                  height="17"
+                  fill="white"
+                  transform="translate(0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <span class="item__span">CONTACT US</span>
+        </li>
+        <li class="navigation__item desktop-item">
+          <svg
+            class="list__icon terms-icon"
+            width="19"
+            height="8"
+            viewBox="0 0 19 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path d="M0 7H19" stroke="white" stroke-linecap="square" />
+              <path d="M0 0.5H13" stroke="white" stroke-linecap="square" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="19" height="7.5" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="item__span">TERMS</span>
+        </li>
+      </ul>
+      <div class="nav__logout">
+        <span class="logout">LOG OUT</span>
+        <span class="user">Thomas Schneider</span>
+        <img
+          src="img/logout__avatar.png"
+          alt="Logout avatar"
+          class="logout__avatar"
+        />
+      </div>
+    </div>
+  </body>
+</html>

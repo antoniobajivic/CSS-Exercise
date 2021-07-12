@@ -1,0 +1,1411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat";
+}
+
+header {
+  background: #f96332;
+  padding: 29px 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__corner,
+.page__icon {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+
+.left-corner {
+  justify-content: flex-start;
+}
+
+.right-corner {
+  justify-content: flex-end;
+}
+
+.nav__span {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.page__icon {
+  height: 22px;
+  justify-content: center;
+}
+
+.nav__icon {
+  width: auto;
+}
+
+.menu__icon {
+  height: 17px;
+}
+
+.plus__icon {
+  height: 21px;
+}
+
+.search__icon {
+  height: 21px;
+}
+
+.nav__avatar {
+  height: 26px;
+  border-radius: 30px;
+}
+
+.bookmark__icon {
+  height: 21px;
+}
+
+.nav__span,
+.search__icon,
+.nav__avatar,
+.bookmark__icon {
+  display: none;
+}
+
+.header__title {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    #f96332;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 35px;
+}
+
+.weather__container {
+  width: 100%;
+  background: #ffb235;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "current__weather select__temperature"
+    "hourly__temperatures hourly__temperatures";
+}
+
+.article__container,
+.sport__container,
+.subscribe__container,
+.arctic__container {
+  display: none;
+}
+
+.temperature__days {
+  display: none;
+}
+
+.current__weather {
+  padding: 30px 40px;
+  grid-area: current__weather;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cloud__icon {
+  width: 42px;
+  height: 32px;
+  margin-bottom: 11px;
+}
+
+.weather__font {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.weather-descripton {
+  margin-bottom: 2px;
+}
+
+.weather-city {
+  opacity: 0.5;
+}
+
+.select__temperature {
+  padding: 30px 40px;
+  grid-area: select__temperature;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.current__temperature {
+  text-align: right;
+  font-weight: bold;
+  font-size: 110px;
+  line-height: 134px;
+  letter-spacing: -5px;
+  color: #ffffff;
+}
+
+.hourly__temperatures {
+  position: relative;
+  z-index: 2;
+  grid-area: hourly__temperatures;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.graph {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.hour__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+
+.hour {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.stock__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.stocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nasdaq dowjones";
+}
+
+.stock__focus {
+  display: none;
+}
+
+.stock__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-nasdaq {
+  grid-area: nasdaq;
+}
+
+.item-dowjones {
+  grid-area: dowjones;
+}
+
+.item-apple,
+.item-google,
+.new__worth {
+  display: none;
+}
+
+.item__header {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item__title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.stock__icon {
+  width: 6px;
+  height: 14px;
+  opacity: 0.5;
+}
+
+.stock__rate {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.stock__change {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -1px;
+  margin-bottom: 4px;
+}
+
+.change-positive {
+  color: #63da38;
+}
+
+.change-negative {
+  color: #ff3636;
+}
+
+.stock__worth {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.stock__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.stock__graph {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.stock__details {
+  z-index: 3;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #f96332;
+}
+
+.stock__details:hover {
+  background: #dadada;
+}
+
+footer {
+  display: none;
+  background: #f2f2f2;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.side__button {
+  background: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.left__arrow {
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0 0 1px 1px;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.left__arrow::after {
+  content: "";
+  width: 18px;
+  border-bottom: 1px solid #000000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: calc(50% - 1px);
+  right: calc(50% - 9px);
+}
+
+.right__arrow {
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.right__arrow::after {
+  content: "";
+  width: 18px;
+  border-bottom: 1px solid #000000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: calc(50% - 1px);
+  right: calc(50% - 9px);
+}
+
+.change__pages {
+  display: flex;
+  align-items: center;
+}
+
+.page__number {
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: transparent;
+  padding: 10px 16px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+
+.page__number:last-child {
+  margin-right: 0;
+}
+
+.page-active {
+  color: #ffffff;
+  background: #f96332;
+}
+
+@media screen and (min-width: 768px) {
+  .search__icon,
+  .nav__avatar {
+    display: block;
+    margin-left: 32px;
+  }
+  .header__title {
+    display: none;
+  }
+
+  .current__weather {
+    padding: 40px 50px;
+    justify-content: flex-start;
+  }
+
+  .cloud__icon {
+    width: 115px;
+    height: 88px;
+  }
+
+  .weather-descripton {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .weather-city {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .select__temperature {
+    padding: 40px 50px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .temperature__days {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .select__day {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.6;
+    padding-bottom: 6px;
+    margin-left: 28px;
+  }
+
+  .day-active {
+    margin-left: 0;
+    opacity: 1;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffffff;
+  }
+  .current__temperature {
+    font-size: 170px;
+    line-height: 207px;
+    letter-spacing: -4.2px;
+  }
+
+  .hourly__temperatures {
+    padding: 40px 50px;
+    align-items: flex-end;
+  }
+
+  .temperature {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .hour {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .stock__container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+      "stocks stocks stocks stocks"
+      "focus focus focus focus";
+  }
+
+  .stocks {
+    grid-area: stocks;
+    display: flex;
+    width: 100%;
+  }
+
+  .stock__item {
+    padding: 40px;
+    border-right: 1px solid #f2f2f2;
+  }
+
+  .item-apple,
+  .item-google {
+    display: flex;
+  }
+
+  .item-apple {
+    background-color: #f2f2f2;
+  }
+
+  .item__header {
+    justify-content: center;
+  }
+
+  .stock__rate {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .new__worth {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.3;
+  }
+
+  .stock__change {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+
+  .stock__icon,
+  .stock__worth,
+  .stock__footer {
+    display: none;
+  }
+
+  .stock__focus {
+    grid-area: focus;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      "header info info"
+      "graphical graphical graphical";
+    position: relative;
+  }
+
+  .focus__header {
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 35px 40px;
+  }
+
+  .focus__font {
+    color: #000000;
+    opacity: 0.3;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .focus__name {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .focus__rate {
+    font-size: 80px;
+    line-height: 97px;
+    opacity: 1;
+  }
+
+  .focus__date {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .focus__info {
+    grid-area: info;
+    padding: 35px 40px;
+    position: relative;
+  }
+
+  .info__data {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 50px;
+    grid-template-areas: "first__column second__column";
+  }
+
+  .first__column {
+    grid-area: first__column;
+  }
+
+  .second__column {
+    grid-area: second__column;
+  }
+
+  .column__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item__description {
+    font-size: 12px;
+    line-height: 13px;
+    opacity: 0.3;
+  }
+
+  .item__datum {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .info__icon,
+  .info__button {
+    position: absolute;
+    right: 40px;
+  }
+
+  .info__icon {
+    width: 15px;
+    height: 6px;
+    opacity: 0.3;
+    top: 35px;
+  }
+
+  .info__button {
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    border-radius: 40px;
+    background: transparent;
+    border: 1px solid #f2f2f2;
+  }
+
+  .button__graph {
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+  }
+
+  .button__time {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .focus__graphical {
+    width: 100%;
+    height: 100%;
+    grid-area: graphical;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+  }
+
+  .focus__rates {
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0 40px;
+  }
+
+  .rate__row {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+    opacity: 0.3;
+  }
+
+  .focus__months {
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .graph__month {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    opacity: 0.3;
+  }
+
+  .graph__years {
+    padding: 0 90px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .focus__year {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    opacity: 0.05;
+  }
+
+  .focus__graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .focus__pointer {
+    position: absolute;
+    background-color: rgba(249, 99, 50, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(50% - 140px);
+    left: calc(50% + 30px);
+  }
+
+  .main__pointer {
+    background-color: rgba(249, 99, 50, 1);
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+  }
+
+  .article__container {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .article__image {
+    width: 100%;
+  }
+
+  .article__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .background__image {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+  }
+
+  .article__header {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 35px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title ."
+      "info category";
+  }
+
+  .article__title {
+    grid-area: title;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #ffffff;
+  }
+
+  .article__info {
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .article__span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15px;
+  }
+
+  .source__icon {
+    width: 10px;
+    height: 15px;
+    opacity: 0.3;
+    margin-right: 10px;
+  }
+
+  .span__font {
+    font-size: 10px;
+    line-height: 12px;
+    color: #ffffff;
+  }
+
+  .clock__icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+
+  .article__category {
+    grid-area: category;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .span-category {
+    padding: 6px 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .sport__container {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f2f2f2;
+  }
+
+  .sport__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  .button__decoration {
+    background: transparent;
+    border: none;
+    height: 15px;
+    width: 30px;
+    opacity: 0.3;
+  }
+
+  .sport__day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .day__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .day__date {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    opacity: 0.3;
+    margin-bottom: 40px;
+  }
+
+  .nhl__sport {
+    padding: 0 40px;
+  }
+
+  .sport__category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .sport__category::before {
+    content: "";
+    width: calc(50% - 30px);
+    border-top: 1px solid #000000;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .sport__category::after {
+    content: "";
+    width: calc(50% - 30px);
+    border-bottom: 1px solid #000000;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .sport__game {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+  }
+
+  .team__logo {
+    width: 48px;
+    height: 36px;
+  }
+
+  .game__team,
+  .game__score {
+    width: 33.33%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .home-team {
+    justify-content: flex-start;
+  }
+  .game__score {
+    justify-content: center;
+  }
+  .away-team {
+    justify-content: flex-end;
+  }
+
+  .home-team > .team__logo {
+    margin-right: 30px;
+  }
+
+  .away-team > .team__logo {
+    margin-left: 30px;
+  }
+
+  .team__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-team > .team__info {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .away-team > .team__info {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .team__origin {
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 0.3;
+    margin-bottom: 4px;
+  }
+
+  .team__name {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .score__number {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .score__separator {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    opacity: 0.3;
+    margin: 0 30px;
+  }
+
+  .final-game {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 40px 50px;
+  }
+
+  .final-game > .sport__game {
+    padding: 0;
+  }
+
+  .final-name {
+    margin-bottom: 10px;
+  }
+
+  .team__thirds {
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 0.3;
+  }
+
+  .score__details {
+    margin-bottom: 15px;
+  }
+
+  .score-final {
+    flex-direction: column;
+  }
+
+  .game__description {
+    font-size: 13px;
+    line-height: 16px;
+    opacity: 0.3;
+  }
+
+  .score__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .first__row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #dadada;
+    opacity: 0.3;
+  }
+
+  .row__span {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .team__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #dadada;
+  }
+
+  .watch__game {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cup__playoffs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .playoffs__title {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 10px;
+  }
+
+  .playoffs__date {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  .playoffs__location {
+    font-size: 11px;
+    line-height: 13px;
+    opacity: 0.5;
+  }
+
+  .watch__button {
+    width: 60px;
+    height: 60px;
+    background: #f96332;
+    border: none;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 40px 100px rgba(0, 0, 0, 0.2);
+  }
+
+  .right__triangle {
+    border-top: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    transform: rotate(45deg);
+  }
+
+  .game__padding {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game__padding > .sport__game {
+    padding: 30px 0;
+    border-bottom: 1px solid #dadada;
+  }
+
+  .subscribe__container {
+    margin-top: -4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: #f96332;
+    padding: 130px;
+  }
+
+  .airplane__icon {
+    width: 100%;
+    max-width: 330px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .subscribe__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 40px 100px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+  .subscribe__description {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-bottom: 40px;
+  }
+
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe__span {
+    width: 325px;
+    height: 55px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .letter__icon {
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    top: calc(50% - 8px);
+    left: 22px;
+  }
+
+  .subscribe__input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    );
+    padding: 20px 20px 20px 60px;
+  }
+
+  .subscribe__input::placeholder {
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  .subscribe__button {
+    width: 325px;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #ec5d2f;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "article weather"
+      "stocks stocks"
+      "subscribe sport"
+      "arctic sport";
+  }
+
+  .article__container {
+    grid-area: article;
+    width: 100%;
+  }
+
+  .weather__container {
+    grid-area: weather;
+    width: 100%;
+    height: 100%;
+  }
+
+  .stock__container {
+    grid-area: stocks;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "stocks focus";
+  }
+
+  .stocks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stock__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title change"
+      "rate change";
+    border: none;
+  }
+
+  .item-dowjones {
+    border-bottom: 1px solid #dadada;
+  }
+
+  .item__header {
+    grid-area: title;
+  }
+
+  .stock__rate {
+    grid-area: change;
+  }
+
+  .new__worth {
+    grid-area: rate;
+  }
+
+  .info__data {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 40px;
+  }
+
+  .grid__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 40px;
+    background: transparent;
+    border: 1px solid #f2f2f2;
+    width: 100%;
+    max-width: 108px;
+  }
+
+  .info__button {
+    display: none;
+  }
+
+  .subscribe__container {
+    margin-top: 0;
+    grid-area: subscribe;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sport__container {
+    grid-area: sport;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .arctic__container {
+    grid-area: arctic;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .arctic__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .arctic__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  .image__part {
+    width: 100%;
+    height: 100%;
+  }
+
+  .arctic__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arctic__info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 30px 24px 38px;
+    display: flex;
+    align-items: center;
+  }
+
+  .arctic__span {
+    display: flex;
+    align-items: center;
+  }
+
+  .font__arctic {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .clock__icon {
+    opacity: 0.5;
+  }
+
+  .arctic__category {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .arctic__span:first-child {
+    margin-right: 25px;
+  }
+
+  footer {
+    display: flex;
+  }
+}

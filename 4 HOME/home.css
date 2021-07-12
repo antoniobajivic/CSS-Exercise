@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 29px 10px 13px;
+  background-color: #f96332;
+}
+main {
+  flex-grow: 1;
+}
+
+.nav-bar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-svg {
+  width: auto;
+}
+
+.icon-logo {
+  height: 22px;
+}
+.icon-menu,
+.icon-search {
+  height: 25px;
+}
+
+.article-list {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.article {
+  border-bottom: 1px solid lightgray;
+  padding: 20px 18px;
+}
+
+.article picture {
+  width: 100%;
+}
+
+.article__image {
+  display: none;
+}
+
+.article__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  min-height: 52px;
+  margin-bottom: 12px;
+}
+.article__meta {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.center-item {
+  display: flex;
+  align-items: center;
+}
+.meta__icon {
+  margin-right: 8px;
+}
+.meta__icon svg {
+  height: 15px;
+  width: auto;
+}
+.meta__name {
+  font-size: 10px;
+}
+.meta__category .meta__name {
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: 1px solid lightgray;
+}
+
+.meta__source {
+  margin-right: 20px;
+}
+.meta__category {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.article--first {
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.article--first .meta__icon svg path[stroke="black"] {
+  stroke: #ffffff;
+  opacity: 0.5;
+}
+
+.article--first .article__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.article--first .article__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+}
+
+.article:nth-child(4) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 0;
+    border-style: none;
+  }
+  .article:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+  }
+  .image__wrapper {
+    width: 50%;
+    height: auto;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article__image {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+  }
+
+  .article__info {
+    width: 50%;
+    padding: 80px 40px 20px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article__title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 60px;
+    margin-bottom: 70px;
+    margin-top: auto;
+  }
+  .article--first .image__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .article--first .article__info {
+    padding: 0 40px 20px 34px;
+  }
+  .article--first .article__title {
+    text-align: unset;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    min-height: 92px;
+    margin: 0 160px 3px 10px;
+  }
+
+  .article:nth-child(3) .image__wrapper {
+    padding: 30px 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .first-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .article__info {
+    padding: 0 30px 22px;
+  }
+
+  .article__meta {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .article__title {
+    height: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    min-height: 68px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+
+  .meta__name {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1px;
+  }
+
+  .article.article:nth-child(3) .image__wrapper {
+    padding: 60px 0 0;
+  }
+
+  .article:nth-child(4) {
+    display: block;
+  }
+}

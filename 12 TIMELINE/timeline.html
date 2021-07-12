@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="timeline.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__bar">
+        <div class="nav__corner left-corner">
+          <svg
+            class="nav__icon menu__icon"
+            width="40"
+            height="34"
+            viewBox="0 0 40 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M0 33H40"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M0 17H30"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M0 1H40"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="40" height="34" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="nav__span">TIMELINE</span>
+        </div>
+        <svg
+          class="nav__icon page__icon"
+          width="44"
+          height="44"
+          viewBox="0 0 44 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.6248 5.58425C33.6248 2.85508 35.8369 0.642647 38.5534 0.642647C41.2753 0.642647 43.4819 2.84921 43.4819 5.58425L43.4819 38.4153C43.4819 41.1445 41.2698 43.3569 38.5534 43.3569C35.8314 43.3569 33.6248 41.1504 33.6248 38.4153L33.6248 5.58425Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M33.6248 5.58425C33.6248 2.85508 35.8369 0.642647 38.5534 0.642647C41.2753 0.642647 43.4819 2.84921 43.4819 5.58425L43.4819 38.4153C43.4819 41.1445 41.2698 43.3569 38.5534 43.3569C35.8314 43.3569 33.6248 41.1504 33.6248 38.4153L33.6248 5.58425Z"
+            fill="url(#paint0_linear)"
+          />
+          <rect
+            x="0.786133"
+            y="0.643066"
+            width="9.94927"
+            height="42.7143"
+            rx="4.97463"
+            fill="white"
+          />
+          <rect
+            x="0.786133"
+            y="0.643066"
+            width="9.94927"
+            height="42.7143"
+            rx="4.97463"
+            fill="url(#paint1_linear)"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M42.0411 34.9956C43.9691 36.9236 43.9678 40.0507 42.047 41.9715C40.1222 43.8963 37.0045 43.8991 35.0711 41.9657L2.32354 9.21814C0.395577 7.29018 0.396868 4.16304 2.31768 2.24223C4.24241 0.317499 7.36014 0.314636 9.2936 2.24809L42.0411 34.9956Z"
+            fill="white"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="36.1996"
+              y1="22.9573"
+              x2="36.1996"
+              y2="43.3569"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="white" stop-opacity="0.5" />
+              <stop offset="1" stop-opacity="0.3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear"
+              x1="8.13657"
+              y1="21.0427"
+              x2="8.13657"
+              y2="0.643066"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="white" stop-opacity="0.5" />
+              <stop offset="1" stop-opacity="0.3" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="nav__corner right-corner">
+          <svg
+            class="nav__icon search__icon"
+            width="42"
+            height="44"
+            viewBox="0 0 42 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <circle
+                r="20"
+                transform="matrix(-1 0 0 1 21 21)"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M35 37L41.1847 43.1847"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect
+                  width="42"
+                  height="44"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 42 0)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <img src="img/nav__avatar.png" alt="Avatar" class="nav__avatar" />
+          <svg
+            class="nav__icon bookmark__icon"
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7931 15.5448L0.5 20.2235V0.5H20.5V20.191L11.2236 15.5528C11.0887 15.4853 10.9305 15.4824 10.7931 15.5448Z"
+              stroke="white"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+            />
+            <path d="M7 6.5H14" stroke="white" stroke-linecap="square" />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="current__day">
+        <span class="day__span day__title">MONDAY</span>
+        <span class="day__span day__date">April 6, 2015</span>
+      </div>
+      <div class="vertical__line"></div>
+      <ul class="timeline__events">
+        <li class="event__item">
+          <div class="item__info">
+            <span class="info__description">
+              <span class="icon__span">
+                <svg
+                class="info__icon info__bookmark"
+                width="43"
+                height="43"
+                viewBox="0 0 43 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M20.786 30.4345L1.25 40.6676V1.32031H41.25V40.6676L21.714 30.4345C21.4234 30.2823 21.0766 30.2823 20.786 30.4345Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.25 11.3203H29.25"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="42"
+                      height="42"
+                      fill="white"
+                      transform="translate(0.25 0.320312)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              </span>
+              <span class="info__title">BOOKMARKED</span>
+            </span>
+              <span class="info__date">
+                <svg
+                  class="info__icon info__clock"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.7083 29.5C7.97616 29.5 1.70825 23.2341 1.70825 15.5C1.70825 7.77005 7.97634 1.5 15.7083 1.5C23.4402 1.5 29.7083 7.77005 29.7083 15.5C29.7083 23.2341 23.4403 29.5 15.7083 29.5Z"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M22.7083 17.5H14.7083V7.5"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect
+                        width="30"
+                        height="30"
+                        fill="white"
+                        transform="translate(0.708252 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="info__time">9:34am</span>
+              </span>
+            </span>
+          </div>
+          <div class="item__content">
+            <span class="content__title">
+              NASA goes to Mars: Astronauts could land on Red Planet by 2039
+            </span>
+            <span class="content__text"></span>
+          </div>
+          <div class="item__picture">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/li__bookmark-desktop.png">
+                <img src="img/li__bookmark-tablet.png" alt="Arctic ice" class="li__image">
+            </picture>
+            
+          </div>
+        </li>
+        <li class="event__item">
+          <div class="item__info">
+            <span class="info__description">
+              <span class="icon__span">
+                <svg
+                class="info__icon info__comment"
+                width="45"
+                height="47"
+                viewBox="0 0 45 47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M12.25 23.3203H23.7175"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M12.25 14.3203H33.2738"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                  <path
+                    d="M18.25 36.177H1.25V1.32031H43.25V36.177H33.25C32.6977 36.177 32.25 36.6247 32.25 37.177V43.4093C32.25 44.2072 31.3615 44.6837 30.6968 44.2423L18.8032 36.344C18.6393 36.2351 18.4468 36.177 18.25 36.177Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="44"
+                      height="46"
+                      fill="white"
+                      transform="translate(0.25 0.320312)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              </span>
+              <span class="info__title">COMMENTED</span>
+            </span>
+              <span class="info__date">
+                <svg
+                  class="info__icon info__clock"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.7083 29.5C7.97616 29.5 1.70825 23.2341 1.70825 15.5C1.70825 7.77005 7.97634 1.5 15.7083 1.5C23.4402 1.5 29.7083 7.77005 29.7083 15.5C29.7083 23.2341 23.4403 29.5 15.7083 29.5Z"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M22.7083 17.5H14.7083V7.5"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect
+                        width="30"
+                        height="30"
+                        fill="white"
+                        transform="translate(0.708252 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="info__time">10:05am</span>
+              </span>
+            </span>
+          </div>
+          <div class="item__content">
+            <span class="content__title">
+              NASA goes to Mars: Astronauts could land on Red Planet by 2039
+            </span>
+            <span class="content__text">
+              “Journey to Mars and back again is a great challenge and the
+              biggest part is the strategy.”
+            </span>
+          </div>
+          <div class="item__picture">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/li__comment-desktop.png">
+                <img src="img/li__comment-tablet.png" alt="NASA: Red planet" class="li__image">
+              </picture>
+          </div>
+        </li>
+        <li class="event__item current__tablet">
+          <span class="current__title">MONDAY</span>
+          <span class="current__date">April 6, 2015</span>
+        </li>
+        <li class="event__item">
+          <div class="item__info">
+            <span class="info__description">
+              <span class="icon__span">
+                <svg
+                class="info__icon info__follow"
+                width="46"
+                height="33"
+                viewBox="0 0 46 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.25 16.198L15.9988 31.3203L45.25 1.32031"
+                  stroke="black"
+                  stroke-width="2"
+                />
+              </svg>
+              </span>
+              
+              <span class="info__title">FOLLOWED</span>
+            </span>
+              <span class="info__date">
+                <svg
+                  class="info__icon info__clock"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.7083 29.5C7.97616 29.5 1.70825 23.2341 1.70825 15.5C1.70825 7.77005 7.97634 1.5 15.7083 1.5C23.4402 1.5 29.7083 7.77005 29.7083 15.5C29.7083 23.2341 23.4403 29.5 15.7083 29.5Z"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M22.7083 17.5H14.7083V7.5"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect
+                        width="30"
+                        height="30"
+                        fill="white"
+                        transform="translate(0.708252 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="info__time">5:36pm</span>
+              </span>
+            </span>
+          </div>
+          <div class="item__content">
+            <span class="content__title"> "Travel" channel </span>
+            <span class="content__text"></span>
+          </div>
+          <div class="item__picture">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="img/li__follow-desktop.png">
+                <img src="img/li__follow-tablet.png" alt="Building" class="li__image">
+            </picture>
+            
+          </div>
+        </li>
+        <li class="event__item">
+          <div class="item__info">
+            <span class="info__description">
+              <span class="icon__span">
+                <svg
+                class="info__icon info__share"
+                width="39"
+                height="38"
+                viewBox="0 0 39 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M7.25 1.32031L37.25 1.32031L37.25 31.3203"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M36.75 0.820312L0.736114 36.8342"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="38"
+                      height="37"
+                      fill="white"
+                      transform="translate(0.25 0.320312)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              </span>
+              
+              <span class="info__title">SHARED</span>
+            </span>
+              <span class="info__date">
+                <svg
+                  class="info__icon info__clock"
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.7083 29.5C7.97616 29.5 1.70825 23.2341 1.70825 15.5C1.70825 7.77005 7.97634 1.5 15.7083 1.5C23.4402 1.5 29.7083 7.77005 29.7083 15.5C29.7083 23.2341 23.4403 29.5 15.7083 29.5Z"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M22.7083 17.5H14.7083V7.5"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect
+                        width="30"
+                        height="30"
+                        fill="white"
+                        transform="translate(0.708252 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="info__time">6:00pm</span>
+              </span>
+            </span>
+          </div>
+          <div class="item__content">
+            <span class="content__title">
+              Magma expanse under Yellowstone
+            </span>
+            <span class="content__text"></span>
+          </div>
+          <div class="item__picture">
+                <img src="img/li__shared.png" alt="NASA: Red planet" class="li__image">
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
